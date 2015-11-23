@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>hexo小记 | DING の 次元</title><meta name="author" content="DING"><link rel="stylesheet" href="/css/style.css"><link rel="icon" href="/img/favicon.png"><link rel="canonical" href="/2015/11/23/hexo小记/index.html"></head><body><div class="container"><header class="site-header"><img src="/img/logo.png" alt=""><h1><a href="/">DING の 次元</a></h1><p>iOS Developer 伪果粉 假煤油 索大好</p><nav><ul> <li><a href="/">Home</a></li><li><a href="/archives">Sitemap</a></li></ul></nav></header><main role="main" class="site-main"><article class="article"><time datetime="2015-11-23T00:41:16.000Z">2015-11-23</time><h2 class="article-title"><a href="/2015/11/23/hexo小记/">hexo小记</a></h2><div class="content"><p>严重的拖延症致使这个blog搭了超过半年才搭成 (๑′ᴗ‵๑)…<br>写点东西记录一下 第一次使用Markdown</p>
+<h3 id="Git安装">Git安装</h3><ol>
+<li>mac安装Git<br><code>$ brew install git</code></li>
+<li>安装Node.js<br><code>$ brew install node</code></li>
+</ol>
+<h3 id="配置SSH_keys">配置SSH keys</h3><ol>
+<li>生成SSH key<br><code>$ ssh-keygen -t rsa -C &quot;****@xx.com&quot; #注册github的邮箱地址</code></li>
+<li>输入密码验证</li>
+<li>添加SSH到Github<br>-找到并打开.ssh\id_rsa.pub文件，需要先设置显示隐藏文件<br>-登陆github.Settings—&gt;SSH keys—&gt; add SSH keys<br>-把之前密钥复制到key文本框中</li>
+<li>测试是否成功<br><code>$ ssh -T git@github.com</code></li>
+<li>设置用户信息<br><code>$ git config --global user.name &quot;用户名&quot;</code><br><code>$ git config --global user.email &quot;邮箱&quot;</code></li>
+</ol>
+<h3 id="hexo安装设置">hexo安装设置</h3><ol>
+<li>安装hexo<br><code>$ npm install hexo -g</code></li>
+<li>init<br><code>$ hexo init &lt;folder&gt;</code><br><code>$ hexo g  #generate 生成静态网页</code><br><code>$ hexo s  #运行本地服务</code><br><code>$ hexo deploy #部署到github</code><h4 id="更改主题">更改主题</h4>记得在./_config.yml修改主题名称</li>
+</ol>
+<h4 id="常用命令">常用命令</h4><p><code>$ hexo new &quot;文章名&quot;</code><br>生成文件source/_posts\文章名.md</p>
+<h4 id="每次部署过程">每次部署过程</h4><p><code>$ hexo clean</code><br><code>$ hexo g</code><br><code>$ hexo d</code></p>
+</div><div class="meta"><p class="meta-cats"><a class="category-link" href="/categories/git/">git</a></p><p class="meta-tags"><a class="tag-link" href="/tags/github/">github</a>, <a class="tag-link" href="/tags/hexo/">hexo</a></p></div></article><div class="content-nav"><a href="/2015/11/22/hello-world/" class="next">Next &rarr;</a></div></main><footer class="site-footer"><p>&copy; 2015&nbsp;DING</p></footer></div></body></html>
